@@ -4,18 +4,24 @@
         <title>Mason Goddard</title>
 
         <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/bfe6eb7358.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
 
+        
+
     </head>
+
+
 
 
     <body>
         <div class="hdr-container">
         <header>
-            <div>
+            <a href="#About_Me" class="name-container">
                 <h1>Mason Goddard</h1>
                 <p>Computer Science</p>
-            </div>
+            </a>
+            <div class="logo-skew"></div>
             <ul class="nav-bar">
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Courses">Courses</a></li>
@@ -25,22 +31,22 @@
         </div>
 
         <main>
-            <h1 class="body-headers">Projects</h1>
+            
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem itaque beatae asperiores odit quaerat, neque consequatur laborum aperiam nobis nesciunt laudantium molestiae eum placeat voluptas error quibusdam unde, id quasi?
-            Cumque exercitationem, nihil dicta soluta ut minima cupiditate beatae eveniet aperiam quibusdam, quos dolorum ipsam. Earum magnam est quos deleniti soluta non laboriosam mollitia, ipsa sed officiis magni architecto maxime!</p>
-        
 
-            <section id="Projects">
+
+            <section id="Projects" class="anchor">
                 <h1 class="body-headers">Projects</h1>
                     <div class="cards-container">
                         <a href="#" class="card">
                             <div class="img-box">
-                                <img src="images/unit-tests.png" alt="unit-tests.img">
+                                <img src="images/unit-test-fr.png" alt="unit-tests.img">
                             </div>
                             <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
+                                <h1 class="card-header">Unit Test Clone</h1>
+                                <p class="card-desc">I built a custom unit testing framework in Python to explore how professional testing tools are designed internally. Rather than relying on Python’s built-in unittest, I implemented core testing concepts from scratch, including test discovery, execution flow, lifecycle management, and result aggregation.</p>
+                                <p class="card-desc">The framework includes optional fail-fast execution, a command-line interface, and structured test reporting with support for JUnit XML output for CI compatibility. The project emphasizes clean architecture and extensibility, mirroring how real world developer tools are structured.</p>
+                                <p class="card-desc">This project strengthened my understanding of testing internals, error handling, CLI design, and building maintainable tooling skills directly applicable to large scale software systems.</p>
                             </div>
                         </a>
                         <a href="#" class="card">
@@ -63,41 +69,200 @@
                         </a>
             </section>
 
-            <section id="Courses">
+            <section id="Courses" class="anchor">
                 <h1 class="body-headers">Courses</h1>
                 <div class="cards-container">
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <img src="images/unit-tests.png" alt="unit-tests.img">
+                        
+                   <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Computer Graphics</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; C / C++<br>
+                                &bull; Vulkan SDK
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Systems Programming</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <img src="images/unit-tests.png" alt="unit-tests.img">
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; C / C++
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Object Oriented Programming</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; Python, CherryPy, SQLite<br>
+                                &bull; HTML, JavaScript<br>
+                                &bull; Unit Testing / Selenium Testing<br>
+                                &bull; Version Control (GitHub)
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Applied Computing</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <img src="images/unit-tests.png" alt="unit-tests.img">
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; Information Theory<br>
+                                &bull; Neural Networks
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Algorithms</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; Time &amp; Space Complexity
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="courses">
+                        <div class="course-div">
+                            <div>
+                                <h3>Operating Systems</h3>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </div>
-                        </a>
+                        </div>
+                        <div class="course-content">
+                            <p>
+                                &bull; EXT2 File System Implementation in C
+                            </p>
+                        </div>
+                    </a>
+                    
+                
+                </div>
+            </section>
+
+            <section id="About_Me" class="anchor">
+                <div class="resume">
+                    <a href="#">
+                    <h3> <i class="fa fa-user-circle" aria-hidden="true"></i> Profile</h3>
+                    
+                    <div class="resume-section profile-section">
+                        <div class="resume-hdr">
+                            <h4>Contact Me</h4>
+                        </div>
+                        <ul class="profile-ul">
+                            <li class="profile-li"> 
+                                <b><i class="fa fa-phone" aria-hidden="true"></i></b> 
+                                <p>(937) 205 - 1603</p>
+                            </li>
+                            <li class="profile-li">
+                                <b><i class="fa fa-envelope" aria-hidden="true"></i></b> 
+                                <p>masongoddard05@gmail.com</p>
+                            </li>                        
+                            <li class="profile-li">
+                                <b><i class="fa fa-map-pin" aria-hidden="true"></i></b> 
+                                <p>Greenfield, OH, 45123</p>
+                            </li>
+                        </ul>
+
+                        <div class="resume-hdr">
+                            <h4>Description</h4>
+                        </div>
+                        <ul class="profile-ul">
+                            <li class="profile-li"> 
+                                <p> I am currently a Game Engineering student at Shawnee State University, where I have gained experience a wide range of Computer Science I take pride in my ability to solve problems, grow in any role, take on leadership when needed, and collaborate effectively with others.</p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    </a>
+                    <a href="#">
+                    <h3><i class="fa fa-suitcase" aria-hidden="true"></i> Work Experience</h3>
+                    
+                        <div class="resume-section">
+                        <div class="resume-hdr">
+                            <h4>Shawenee State University</h4>
+                            <p>May 2025 - Current</p>
+                        </div>
+                        <p class="resume-sub-hdr">Resident Assistant</p>
+                        <ul>
+                            <li><b>Emergency Response & Risk Mitigation:</b> Completed rigorous, specialized crisis management training and served as a primary first responder for live emergency scenarios, where I exercised decisive judgment and enforced strict policy compliance to ensure the physical safety and security of all residents under high-pressure conditions.</li>
+                            <li><b>Holistic Resident Advocacy:</b> Conducted a recurring schedule of comprehensive wellness consultations and one-on-one check-ins with a diverse resident population, proactively identifying and addressing barriers to academic success, mental health challenges, and social integration to foster a resilient community environment.</li>
+                            <li><b>Advanced Conflict Mediation:</b> Acted as a formal mediator for complex interpersonal and roommate disputes, utilizing structured communication frameworks and psychological problem-solving techniques to facilitate binding behavioral agreements and de-escalate high-tension residential conflicts.</li>
+                        </ul>
+                        <div class="resume-hdr">
+                            <h4>Tau Kappa Epsilon</h4>
+                            <p>May 2025 - Current</p>
+                        </div>
+                        <p class="resume-sub-hdr">Vice-President (Epiprytanis)</p>
+                        <ul>
+                            <li><b>Strategic Leadership Development:</b> Completed an exhaustive series of intensive leadership academies and professional development conferences, where I engaged in high-level workshops focused on organizational scaling, ethical decision-making, and long-term strategic planning to enhance chapter operations and member engagement.</li>
+                            <li><b>Operational Systems Overhaul:</b> Executed a comprehensive modernization of internal administrative policies and standard operating procedures, specifically re-engineering the workflows for committee reporting, fiscal acquisition, and departmental spending requests to eliminate bureaucratic friction and ensure 100% transparency in financial reporting.</li>
+                            <li><b>Digital Infrastructure Engineering:</b> Conceptualized, developed, and deployed a suite of custom-built mobile and desktop applications via AppSheet to digitize the collection and analysis of critical organizational data, including the real-time tracking of academic study hours, community service mandates, and complex budgetary allocation requests.</li>
+                        </ul>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <h3> <i class="fa fa-book" aria-hidden="true"></i> Education</h3>
+                    <div class="resume-section">
+                    <div class="resume-hdr">
+                            <h4>Shawnee State University</h4>
+                            <p>2023 - PRESENT</p>
+                        </div>
+                        <p class="resume-sub-hdr">Bachelors of Digital Simulation & Gaming Engineering Technologies</p>
+                        <ul>
+                            <li><b>Academic Excellence & Technical Foundation:</b> Maintaining a 3.5 / 4.0 GPA while pursuing a rigorous engineering curriculum focused on complex system architecture, real-time data processing, and advanced digital simulation frameworks designed for high-performance gaming and engineering environments.</li>
+                        </ul>
+
+                        <div class="resume-hdr">
+                            <h4>Tau Kappa Epsilon International</h4>
+                            <p>SUMMER 2025</p>
+                        </div>
+                        <p class="resume-sub-hdr">Leadership Academy Graduate (TKE LA)</p>
+                        <ul>
+                            <li><b>Elite Leadership Selection:</b> Hand-selected as one of only 72 distinguished attendees from a nationwide applicant pool of thousands, representing the top tier of collegiate leaders across all North American regions for intensive, high-level executive training and organizational strategy.</li>
+                        </ul>
+                        
+                    </div>
+                    </a>
+                </div>
+                
+                <a href="pdfs/unfinished Resume.pdf" class="pdf-link" target="_blank">
+                    <p>See Resume</p>
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
             </section>
             
-            <section id="About_Me">
-                <h1 class="body-headers">About Me</h1>
-            </section>
+            <footer>
+
+            </footer>
+
         </main>
     </body>
 
