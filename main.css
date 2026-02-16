@@ -42,7 +42,6 @@ header {
     justify-content: right;
     align-items: center;
     text-transform: uppercase;
-    padding: 1rem 2rem 0rem;
     box-shadow: 0 0.04rem 1rem rgba(0, 0, 0, 0.7);
     letter-spacing: 2px;
 
@@ -72,44 +71,48 @@ header p {
     
 }
 
+.nav-bar li {
+    transition: 250ms linear;
 
-
-.nav-bar a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: black;
-    padding-inline: 2rem;
-    transition: 250ms ease-in;
 }
 
+.nav-bar a{
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    padding-top: 1.3rem;
+    align-items: center;
+    color: black;
+    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
 
+.nav-bar a:hover{
+    cursor: pointer;
+}
 
 .nav-bar li::after {
-    background-color: black;
+    background-color: var(--highlight-color);
     display: block;
-    align-self: center;
     position: relative;
-    top: 3px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     content: "";
-    width: 10%;
+    width: 0%;
     height: .26rem;
-    transition: 250ms ease-in;
+    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
 
-.nav-bar li:hover::after{
-    width: 80%;
+
+.nav-bar li:hover::after {
+    width: 100%;
     background-color: var(--highlight-color);
 
 }
 
-.nav-bar li:hover a{
-    color: var(--highlight-color);
-}
-
 .nav-bar li:focus-within::after{
-    width: 80%;
+    width: 100%;
     background-color: var(--highlight-color);
 
 }
@@ -118,13 +121,13 @@ header p {
     color: var(--highlight-color);
 }
 
+
+
 .body-headers {
-    padding-block: 1rem;
+    margin-block: 5rem;
 }
 
-section {
-    padding-block: 3rem;
-}
+
 
 .img-box img {
     display: block;
@@ -137,16 +140,15 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    grid-gap: 2rem;
+    grid-gap: 0;
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 .card {
     display: block;
     overflow: hidden;
-    border-radius: 0.6rem;
     cursor: pointer;
     transition: 0.2s;
     position: relative;
