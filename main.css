@@ -35,6 +35,7 @@ body > * {
     padding: 1rem 2rem;
 }
 
+
 .hdr-container{
     padding: 0rem;
     display: block;
@@ -181,7 +182,7 @@ header p {
     margin-block: 5rem;
 }
 
-#About_Me .pdf-link{
+#Resume .pdf-link{
     background-color: var(--text-color);
     display: flex;
     padding-inline: 1rem;
@@ -193,7 +194,7 @@ header p {
     overflow: hidden;
 }
 
-#About_Me .pdf-link > * {
+#Resume .pdf-link > * {
     font-size: 1.6rem;
     font-weight: bolder;
     padding: 1rem;
@@ -202,11 +203,11 @@ header p {
     align-items: center;
 }
 
-#About_Me .fa {
+#Resume .fa {
     padding-right: 2rem;
 }
 
-#About_Me .pdf-link::after {
+#Resume .pdf-link::after {
     content: "";
     display: block;
     position: absolute;
@@ -218,7 +219,7 @@ header p {
     transition: var(--transition-function-w-time);
 }
 
-#About_Me .pdf-link::before {
+#Resume .pdf-link::before {
     content: "";
     display: block;
     position: absolute;
@@ -230,10 +231,10 @@ header p {
     transition: var(--transition-function-w-time);
 }
 
-#About_Me .pdf-link:hover::after,
-#About_Me .pdf-link:hover::before,
-#About_Me .pdf-link:focus::after,
-#About_Me .pdf-link:focus::before {
+#Resume .pdf-link:hover::after,
+#Resume .pdf-link:hover::before,
+#Resume .pdf-link:focus::after,
+#Resume .pdf-link:focus::before {
     width: 100%;
 }
 
@@ -246,8 +247,6 @@ header p {
     grid-gap: 1rem;
     padding: 2rem 1rem;
     text-align: left;
-    margin-top: 2.6rem;
-    margin-bottom: 1rem;
     color: black;
 }
 
@@ -268,8 +267,7 @@ header p {
 
 .resume-section {
     display: block;
-    margin-inline: 0.4rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0.4rem;
     padding: 1rem 1.8rem;
     border-left: 0.26rem solid black;
     transition: 700ms var(--transition-function);
@@ -312,6 +310,10 @@ li.profile-li {
     font-weight: bolder;
 }
 
+.resume h3 {
+    padding-top: .3rem;
+}
+
 .resume-sub-hdr,
 .resume-hdr p {
     font-size: .8rem;
@@ -329,10 +331,6 @@ li.profile-li {
     padding-block: 0.3rem;
 }
 
-
-
-
-
 [id]::before {
   content: '';
   display: block;
@@ -341,7 +339,6 @@ li.profile-li {
   visibility: hidden;
 }
 
-
 .img-box img {
     display: block;
     width: 100%;
@@ -349,23 +346,22 @@ li.profile-li {
     object-fit: cover;
 }
 
-
-
 .cards-container {
-    display: grid;
+    display: flex;
     background-color: var(--text-color);
     padding: 1rem;
     border-radius: 0.3rem;
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    grid-gap: 2rem;
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    grid-gap: 1rem;
     margin: auto;
 }
 
 .card {
     display: block;
+    flex: 1 1 40%;
+    max-width:100%;
     overflow: hidden;
     border-radius: .3rem;
     cursor: pointer;
@@ -392,6 +388,7 @@ li.profile-li {
 .card-content h1 {
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
     text-transform: capitalize;
 }
 
@@ -426,12 +423,11 @@ li.profile-li {
 }
 
 #Courses .cards-container {
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    justify-content: left;
+    background-color: var(--background-color);
 
 }
-
-
 
 .courses {
     background-color: var(--text-color);
@@ -505,6 +501,9 @@ li.profile-li {
     z-index: 1;
 }
 
+
+
+
 .course-content > * {
     padding: 1rem;
     line-height: 1.8rem;    
@@ -526,6 +525,23 @@ li.profile-li {
 .courses:focus .course-content{
     height: 1000px;
 }
+
+#About_Me ul {
+    background-color: var(--text-color);
+    padding: 2rem 1rem;
+    color: black;
+    list-style-type: None;
+    border-radius: 0.26rem;
+}
+
+#About_Me li {
+    color: black;
+    line-height: 1.6rem;
+    padding: 2rem 1rem;
+}
+
+
+
 
 footer {
     padding-block: 5rem;
