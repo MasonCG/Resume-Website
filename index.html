@@ -1,284 +1,172 @@
 <!DOCTYPE >
 <html en="English">
-    <head>
-        <title>Mason Goddard</title>
+<head>
+    <title>Mason Goddard</title>
 
-        <link rel="stylesheet" href="main.css">
-        <script src="https://kit.fontawesome.com/bfe6eb7358.js" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/bfe6eb7358.js" crossorigin="anonymous"></script>
 
+    
+
+</head>
+
+
+<body>
+<div class="filter">
+    <!-- Navigation Bar -->
+    
+    <div class="nav-bar">
+        <ul id="nav-ul">
+            <li onclick="highlightEl(this)"><a href="#AboutMe">Mason Goddard</a></li>
+            <div>
+                <li onclick="highlightEl(this)"><a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li onclick="highlightEl(this)"><a href="pdfs/unfinished Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i> Download Resume</a></li>
+            </div>
+        </ul>
+
+    </div>
+
+    <!-- About Me Section -->
+
+    <div id="AboutMe" class="about-me">
         
-
-    </head>
-
-
-
-
-    <body>
-        <div class="hdr-container">
-        <header>
-            <a href="#About_Me" class="name-container">
-                <h1>Mason Goddard</h1>
-                <p>Computer Science</p>
-            </a>
-            <div class="logo-skew"></div>
-            <ul class="nav-bar">
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Courses">Courses</a></li>
-                <li><a href="#Resume">Resume</a></li>
-                <li><a href="#About_Me">About Me</a></li>
-            </ul>
-        </header>
+        <div class="profile">
+            <h1>Mason Goddard</h1>
+            <img src="images/me.png" alt="">
         </div>
 
-        <main>
+        <div class="content">
             
+            <div>
+                <h3>About Me</h3>
+                <p class="text long"> I am a Software Engineering focused student at Shawnee State University with experience across a broad range of Computer Science topics. I approach problems directly and adapt quickly in new environments. I take a proactive role in project management, team collaboration and leadership while recognizing the importance of delegation and accountability. I am passionate about software and committed to continuous growth, consistently building my skill set through both personal projects and university work.</p>
+            </div>
 
-
-
-            <section id="Projects" class="anchor">
-                <h1 class="body-headers">Projects</h1>
-                    <div class="cards-container">
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <img src="images/unit-test-fr.png" alt="unit-tests.img">
-                            </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Unit Test Clone</h1>
-                                <p class="card-desc">I built a custom unit testing framework in Python to explore how professional testing tools are designed internally. Rather than relying on Python’s built-in unittest, I implemented core testing concepts from scratch, including test discovery, execution flow, lifecycle management, and result aggregation.</p>
-                                <p class="card-desc">The framework includes optional fail-fast execution, a command-line interface, and structured test reporting with support for JUnit XML output for CI compatibility. The project emphasizes clean architecture and extensibility, mirroring how real world developer tools are structured.</p>
-                                <p class="card-desc">This project strengthened my understanding of testing internals, error handling, CLI design, and building maintainable tooling skills directly applicable to large scale software systems.</p>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <img src="images/unit-tests.png" alt="unit-tests.img">
-                            </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="img-box">
-                                <video autoplay loop muted>
-                                    <source src="images/flowing fireworks.mp4" type="video/mov">
-                                </video>
-                            </div>
-                            <div class="card-content">
-                                <h1 class="card-header">Heading 1</h1>
-                                <p class="card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, deserunt laborum modi et ea laboriosam nobis, animi non recusandae fuga reiciendis harum corrupti dignissimos aliquid quisquam vitae unde quis esse!</p>
-                            </div>
-                        </a>
-            </section>
-
-            <section id="Courses" class="anchor">
-                <h1 class="body-headers">Courses</h1>
-                <div class="cards-container">
-                        
-                   <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Computer Graphics</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; C / C++<br>
-                                &bull; Vulkan SDK
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Systems Programming</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; C / C++
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Object Oriented Programming</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; Python, CherryPy, SQLite<br>
-                                &bull; HTML, JavaScript<br>
-                                &bull; Unit Testing / Selenium Testing<br>
-                                &bull; Version Control (GitHub)
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Applied Computing</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; Information Theory<br>
-                                &bull; Neural Networks
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Algorithms</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; Time &amp; Space Complexity
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="courses">
-                        <div class="course-div">
-                            <div>
-                                <h3>Operating Systems</h3>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <p>
-                                &bull; EXT2 File System Implementation in C
-                            </p>
-                        </div>
-                    </a>
-                    
-                
+            <div class="inner-content">
+                <div>
+                    <h3>Contact Me</h3>
+                    <p class="text"><i class="fa fa-phone" aria-hidden="true"></i> (937) 205 - 1603</p>
+                    <p class="text"><i class="fa fa-envelope" aria-hidden="true"></i> masonGoddard2005@gmail.com</p>
                 </div>
-            </section>
-
-            <section id="Resume" class="anchor">
-                <h1 class="body-headers">Resume</h1>
-
-                <div class="resume">
-                    <a href="#">
-                    <h3> <i class="fa fa-user-circle" aria-hidden="true"></i> Profile</h3>
-                    
-                    <div class="resume-section profile-section">
-                        <div class="resume-hdr">
-                            <h4>Contact Me</h4>
-                        </div>
-                        <ul class="profile-ul">
-                            <li class="profile-li"> 
-                                <b><i class="fa fa-phone" aria-hidden="true"></i></b> 
-                                <p>(937) 205 - 1603</p>
-                            </li>
-                            <li class="profile-li">
-                                <b><i class="fa fa-envelope" aria-hidden="true"></i></b> 
-                                <p>masongoddard05@gmail.com</p>
-                            </li>                        
-                            <li class="profile-li">
-                                <b><i class="fa fa-map-pin" aria-hidden="true"></i></b> 
-                                <p>Greenfield, OH, 45123</p>
-                            </li>
-                        </ul>
-
-                        <div class="resume-hdr">
-                            <h4>Description</h4>
-                        </div>
-                        <ul class="profile-ul">
-                            <li class="profile-li"> 
-                                <p> I am currently a Game Engineering student at Shawnee State University, where I have gained experience a wide range of Computer Science I take pride in my ability to solve problems, grow in any role, take on leadership when needed, and collaborate effectively with others.</p>
-                            </li>
-                        </ul>
-
-
-                    </div>
-                    </a>
-
-                    <a href="#">
-                    <h3><i class="fa fa-suitcase" aria-hidden="true"></i> Work Experience</h3>
-                    
-                        <div class="resume-section">
-                        <div class="resume-hdr">
-                            <h4>Shawenee State University</h4>
-                            <p>May 2025 - Current</p>
-                        </div>
-                        <p class="resume-sub-hdr">Resident Assistant</p>
-                        <ul>
-                            <li><b>Emergency Response & Risk Mitigation:</b> Completed rigorous, specialized crisis management training and served as a primary first responder for live emergency scenarios, where I exercised decisive judgment and enforced strict policy compliance to ensure the physical safety and security of all residents under high-pressure conditions.</li>
-                            <li><b>Holistic Resident Advocacy:</b> Conducted a recurring schedule of comprehensive wellness consultations and one-on-one check-ins with a diverse resident population, proactively identifying and addressing barriers to academic success, mental health challenges, and social integration to foster a resilient community environment.</li>
-                            <li><b>Advanced Conflict Mediation:</b> Acted as a formal mediator for complex interpersonal and roommate disputes, utilizing structured communication frameworks and psychological problem-solving techniques to facilitate binding behavioral agreements and de-escalate high-tension residential conflicts.</li>
-                        </ul>
-                        <div class="resume-hdr">
-                            <h4>Tau Kappa Epsilon</h4>
-                            <p>May 2025 - Current</p>
-                        </div>
-                        <p class="resume-sub-hdr">Vice-President (Epiprytanis)</p>
-                        <ul>
-                            <li><b>Strategic Leadership Development:</b> Completed an exhaustive series of intensive leadership academies and professional development conferences, where I engaged in high-level workshops focused on organizational scaling, ethical decision-making, and long-term strategic planning to enhance chapter operations and member engagement.</li>
-                            <li><b>Operational Systems Overhaul:</b> Executed a comprehensive modernization of internal administrative policies and standard operating procedures, specifically re-engineering the workflows for committee reporting, fiscal acquisition, and departmental spending requests to eliminate bureaucratic friction and ensure 100% transparency in financial reporting.</li>
-                            <li><b>Digital Infrastructure Engineering:</b> Conceptualized, developed, and deployed a suite of custom-built mobile and desktop applications via AppSheet to digitize the collection and analysis of critical organizational data, including the real-time tracking of academic study hours, community service mandates, and complex budgetary allocation requests.</li>
-                        </ul>
-                    </div>
-                    </a>
-                    <a href="#">
-                    <h3> <i class="fa fa-book" aria-hidden="true"></i> Education</h3>
-                    <div class="resume-section">
-                    <div class="resume-hdr">
-                            <h4>Shawnee State University</h4>
-                            <p>2023 - PRESENT</p>
-                        </div>
-                        <p class="resume-sub-hdr">Bachelors of Digital Simulation & Gaming Engineering Technologies</p>
-                        <ul>
-                            <li><b>Academic Excellence & Technical Foundation:</b> Maintaining a 3.5 / 4.0 GPA while pursuing a rigorous engineering curriculum focused on complex system architecture, real-time data processing, and advanced digital simulation frameworks designed for high-performance gaming and engineering environments.</li>
-                        </ul>
-
-                        <div class="resume-hdr">
-                            <h4>Tau Kappa Epsilon International</h4>
-                            <p>SUMMER 2025</p>
-                        </div>
-                        <p class="resume-sub-hdr">Leadership Academy Graduate (TKE LA)</p>
-                        <ul>
-                            <li><b>Elite Leadership Selection:</b> Hand-selected as one of only 72 distinguished attendees from a nationwide applicant pool of thousands, representing the top tier of collegiate leaders across all North American regions for intensive, high-level executive training and organizational strategy.</li>
-                        </ul>
-                        
-                    </div>
-                    </a>
+            
+                <div>
+                    <h3>Resources</h3>
+                    <a><i class="fa-brands fa-github"></i>My GitHub</a>
+                    <a><i class="fas fa-file-download"></i>Download Resume</a>
                 </div>
-                
-                <a href="pdfs/unfinished Resume.pdf" class="pdf-link" target="_blank">
-                    <p>See Resume</p>
-                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                </a>
-            </section>
+            </div>
 
-            <section id="About_Me" class="anchor">
-                <h1 class="body-headers">About Me</h1>
+            <div>
+                <h3>Skills</h3>
+                <p class="text long">
+                    &bull; <strong>Programming Languages:</strong> C, C++, Python, and JavaScript applied across systems, web, and application development.<br>
+                    &bull; <strong>Systems Programming:</strong> Low-level development in C including memory management, file systems, and direct hardware interaction.<br>
+                    &bull; <strong>Computer Graphics:</strong> Experience using Vulkan SDK with exposure to GPU pipelines and rendering concepts.<br>
+                    &bull; <strong>Full-Stack Web Development:</strong> Developed dynamic web applications using Flask, HTML, CSS, and JavaScript.<br>
+                    &bull; <strong>Backend Architecture:</strong> Designed modular server-side logic, RESTful routing, and scalable application structures.<br>
+                    &bull; <strong>Database Management:</strong> Implemented relational schema design and data persistence using SQLite.<br>
+                    &bull; <strong>Authentication & Authorization:</strong> Built secure login systems with session management and role-based access control.<br>
+                    &bull; <strong>API Development:</strong> Created and integrated APIs to support dynamic data exchange and frontend updates.<br>
+                    &bull; <strong>File Handling & Security:</strong> Implemented secure file uploads, validation, and storage with attention to common vulnerabilities.<br>
+                    &bull; <strong>Frontend Integration:</strong> Utilized Jinja templating with JavaScript to create responsive and interactive user interfaces.<br>
+                    &bull; <strong>State Management:</strong> Managed user sessions and application state across requests within a web application environment.<br>
+                    &bull; <strong>Software Testing:</strong> Applied unit testing and browser automation using Unittest and Selenium.<br>
+                    &bull; <strong>Version Control:</strong> Managed codebases using Git and GitHub with structured workflows.<br>
+                    &bull; <strong>Algorithms & Complexity:</strong> Analyzed and optimized algorithms with focus on time and space efficiency.<br>
+                    &bull; <strong>Operating Systems:</strong> Developed understanding of OS concepts including file systems, processes, and system-level operations.<br>
+                    &bull; <strong>Concurrency & Networking:</strong> Implemented WebSockets, pipelines, and asynchronous/synchronous communication including UART systems.<br>
+                    &bull; <strong>Applied Computing:</strong> Studied information theory and neural networks with practical computational applications.<br>
+                    &bull; <strong>Project Management:</strong> Led planning and execution of technical and organizational projects with proactive oversight.<br>
+                    &bull; <strong>Leadership & Team Collaboration:</strong> Directed teams, facilitated collaboration, and ensured accountability across initiatives.<br>
+                    &bull; <strong>Emergency Management:</strong> Demonstrated decisive leadership during critical incidents while maintaining full policy compliance.<br>
+                    &bull; <strong>Conflict Resolution:</strong> Resolved complex interpersonal issues through structured mediation and negotiation techniques.<br>
+                    &bull; <strong>Relationship Management:</strong> Conducted ongoing check-ins and applied active listening to support community wellbeing.<br>
+                    &bull; <strong>Operational Optimization:</strong> Improved workflows, policies, and organizational structures for increased efficiency.<br>
+                    &bull; <strong>Digital Solutions Development:</strong> Engineered automated data tracking systems using AppSheet for organizational management.<br>
+                    &bull; <strong>Strategic Thinking:</strong> Applied analytical and systems-level reasoning to solve technical and organizational problems.<br>
+                    &bull; <strong>Communication:</strong> Delivered clear, structured communication to both technical and non-technical audiences.<br>
+                    &bull; <strong>Adaptability:</strong> Rapidly learned and applied new technologies across diverse technical and leadership contexts.<br>
+                </p>
+            </div>
+        
+        
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Projects section -->
+     
+    <div id="projs" class="projects">
+        <div class="media-cont" style="grid-area: box-1;">
+            <!-- Unit Test Clone -->
+
+            <h2>Unittest Clone</h2>
+
+            <img src="images/unit-test-fr.png" alt="Unit-TestClone" class="media">
+            <div class="content">
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur laborum libero ab commodi beatae, modi placeat, debitis facilis nam consectetur, nulla doloremque harum nostrum adipisci iusto non recusandae eum aspernatur.</li>
-                    <li>Non minus sit reprehenderit. Rerum doloribus itaque voluptatibus voluptas, debitis, aspernatur beatae accusantium atque eum explicabo, quaerat quas ad. Ut, laborum natus soluta repellat iure eius mollitia ab nisi nemo?</li>
-                    <li>Aliquam illum aliquid inventore deleniti, magnam laudantium, impedit nemo odio totam quibusdam rerum neque expedita, provident reprehenderit adipisci? Nostrum error quos libero corporis, cupiditate illo nesciunt quibusdam commodi voluptas aperiam?</li>
+                    <li class="desc" onclick="viewProj(this)">Description <i class="fa fa-caret-up" aria-hidden="true"></i></li>
+                    <a href="https://github.com/MasonCG/UnitTest-Clone" onclick="highlightEl(this)" target="_blank"><li>Github Repository <i class="fa-brands fa-github"></i></li></a>
                 </ul>
-            </section>
-            
-            <footer>
+                <p>
+                    &bull; <strong>Purpose:</strong> Designed and implemented a custom Python testing framework modeled after core unittest concepts to support structured, repeatable validation of application logic. Focused on improving code reliability by enabling consistent testing of functions, classes, and edge cases within development workflows.<br><br>
+                    &bull; <strong>Core Features:</strong> Developed reusable test case classes, centralized test execution, and automated result aggregation to provide clear pass/fail feedback. Implemented extensible assertion methods to validate expected outcomes and support a wide range of test scenarios.<br><br>
+                    &bull; <strong>Architecture:</strong> Utilized object-oriented design to separate test definitions, execution logic, and result handling, allowing scalable expansion and maintainability of the framework.<br><br>
+                    &bull; <strong>Impact:</strong> Reduced debugging time and increased confidence in code quality by enforcing systematic testing practices across projects.<br><br>
+                    &bull; <strong>Technologies:</strong> Python, object-oriented programming, custom assertion design, modular test suite architecture, and integrated test result reporting.<br><br>
+                </p>
+            </div>
 
-            </footer>
+        </div>
+        <div class="media-cont" style="grid-area: box-2;">
+            <!-- flowing fireworks -->
 
-        </main>
-    </body>
+            <h2>Flowing Fireworks</h2>
+
+            <video class="media" src="images/flowing fireworks.mp4" autoplay loop muted></video>
+            <div class="content">
+                <ul>
+                    <li class="desc" onclick="viewProj(this)">Description <i class="fa fa-caret-up" aria-hidden="true"></i></li>
+                    <a href="https://github.com/MasonCG/Flowing_Fireworks" onclick="highlightEl(this)" target="_blank"><li>Github Repository <i class="fa-brands fa-github"></i></li></a>
+                </ul>
+                <p>
+                    &bull; <strong>Purpose:</strong> Developed an interactive particle simulation and visual effects system to model dynamic phenomena such as fireworks, smoke, fire, and snowfall using real-time rendering. Designed to demonstrate applied physics concepts, animation techniques, and system-level organization within a graphical environment.<br><br>
+                    &bull; <strong>Core Features:</strong> Implemented multiple particle types with unique behaviors including gravity, velocity, fading lifecycles, and randomized motion patterns. Created complex visual effects such as firework launches with explosion patterns, trailing effects, and environmental particles like snow and smoke.<br><br>
+                    &bull; <strong>Architecture:</strong> Built a modular particle system framework using object-oriented design, enabling reusable base particle logic with extensible subclasses for specialized behaviors. Managed emission systems, lifecycle handling, and rendering pipelines for efficient real-time updates.<br><br>
+                    &bull; <strong>Impact:</strong> Demonstrated strong understanding of physics-based simulation, animation systems, and performance considerations in real-time applications, while producing a visually engaging and interactive user experience.<br><br>
+                    &bull; <strong>Technologies:</strong> Python, Pygame, object-oriented programming, trigonometry for motion calculation, real-time rendering, and event-driven input handling.<br><br>
+                </p>            
+            </div>
+
+        </div>
+        <div class="media-cont" style="grid-area: box-3;">
+            <!-- Task List website / web app -->
+
+            <h2>Task Manager Web App</h2>
+
+            <img src="images/task-manager.webp" alt="Unit-TestClone" class="media">
+            <div class="content">
+                <ul>
+                    <li class="desc" onclick="viewProj(this)">Description <i class="fa fa-caret-up" aria-hidden="true"></i></li>
+                    <a href="#" onclick="highlightEl(this)" target="_blank"><li>Github Repository <i class="fa-brands fa-github"></i></li></a>
+                </ul>
+                <p>
+                    &bull; <strong>Purpose:</strong> Designing and developing a task management web application to organize, track, and manage tasks through an intuitive and structured interface. Focused on improving productivity and demonstrating full-stack development capabilities through a clean and user-centered design.<br><br>
+                    &bull; <strong>Core Features:</strong> Planned implementation of task creation, editing, deletion, and status tracking with dynamic UI updates. Includes categorization, prioritization, and real-time interaction to streamline workflow management.<br><br>
+                    &bull; <strong>Architecture:</strong> Structured as a full-stack application using a modular backend with Flask and SQLAlchemy for data management, combined with a templated frontend using Jinja, HTML, CSS, and JavaScript for dynamic rendering and interaction.<br><br>
+                    &bull; <strong>Impact:</strong> Demonstrates ability to design and build scalable web applications while applying best practices in backend development, database integration, and frontend user experience.<br><br>
+                    &bull; <strong>Technologies:</strong> Flask, SQLAlchemy, Python, JavaScript, HTML, CSS, Jinja templating, relational database design, and RESTful application structure.<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <!-- Scripting --> 
+    <script src="main.js" defer></script>
+</body>
 
 </html>
