@@ -176,11 +176,9 @@ body {
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 500px);
+    grid-template-rows: repeat(1, 500px);
     grid-template-areas: 
-    "box-1 box-2"
-    "box-3 box-3";
-
+    "box-1 box-2";
 
     h2 {
         position: absolute;
