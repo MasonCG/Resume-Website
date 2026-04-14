@@ -138,7 +138,7 @@ body {
         .long {
             display: block;
             max-height: 200px;
-            overflow: auto;
+            overflow-y: auto;
         }
 
         .long::-webkit-scrollbar {
@@ -289,5 +289,71 @@ body {
 
 }
 
+@media (max-width: 450px){
 
+    .hide-on-mobile {
+        display: none;
+    }
+
+
+    
+
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 450px);
+        grid-template-areas: 
+        "box-1" 
+        "box-2";
+
+        p::-webkit-scrollbar {
+            width: 2px; /* Any value > 0px */
+        }
+    
+        p::-webkit-scrollbar-track {
+            border-radius: 1rem;
+            background: gray;
+        }
+    
+        p::-webkit-scrollbar-thumb {
+            border-radius: 1rem;
+            background-color: white;
+        }
+    }
+
+    .about-me {
+        flex-direction: column;
+        .profile {
+            padding: 0;
+        }
+
+        .content {
+
+            .long {
+                max-height: none;
+            }
+
+            .short-on-mobile{
+                max-height: 200px;
+            }
+
+            .long::-webkit-scrollbar {
+                width: 3px; /* Any value > 0px */
+            }
+            
+
+            .long::-webkit-scrollbar-track {
+                border-radius: 1rem;
+                background: gray;
+            }
+
+            .long::-webkit-scrollbar-thumb {
+                border-radius: 1rem;
+                background-color: white;
+            }
+        }
+    }
+
+    
+
+}
 

@@ -1,8 +1,10 @@
 <!DOCTYPE >
 <html en="English">
 <head>
-    <title>Mason Goddard</title>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mason Goddard</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/bfe6eb7358.js" crossorigin="anonymous"></script>
 
@@ -19,8 +21,8 @@
         <ul id="nav-ul">
             <li onclick="highlightEl(this)"><a href="#AboutMe">Mason Goddard</a></li>
             <div>
-                <li onclick="highlightEl(this)"><a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li onclick="highlightEl(this)"><a href="pdfs/Mason-Goddard-Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i> Download Resume</a></li>
+                <li onclick="highlightEl(this)"><a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i><p class="hide-on-mobile"> GitHub</p></a></li>
+                <li onclick="highlightEl(this)"><a href="pdfs/Mason-Goddard-Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i><p class="hide-on-mobile"> Download Resume</p></a></li>
             </div>
         </ul>
 
@@ -37,11 +39,6 @@
 
         <div class="content">
             
-            <div>
-                <h3>About Me</h3>
-                <p class="text long"> I am a Software Engineering focused student at Shawnee State University with experience across a broad range of Computer Science topics. I approach problems directly and adapt quickly in new environments. I take a proactive role in project management, team collaboration and leadership while recognizing the importance of delegation and accountability. I am passionate about software and committed to continuous growth, consistently building my skill set through both personal projects and university work.</p>
-            </div>
-
             <div class="inner-content">
                 <div>
                     <h3>Contact Me</h3>
@@ -49,7 +46,7 @@
                     <p class="text"><i class="fa fa-envelope" aria-hidden="true"></i> masonGoddard2005@gmail.com</p>
                 </div>
             
-                <div>
+                <div class="hide-on-mobile">
                     <h3>Resources</h3>
                     <a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i>My GitHub</a>
                     <a href="pdfs/Mason-Goddard-Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i>Download Resume</a>
@@ -57,8 +54,15 @@
             </div>
 
             <div>
+                <h3>About Me</h3>
+                <p class="text long"> I am a Software Engineering focused student at Shawnee State University with experience across a broad range of Computer Science topics. I approach problems directly and adapt quickly in new environments. I take a proactive role in project management, team collaboration and leadership while recognizing the importance of delegation and accountability. I am passionate about software and committed to continuous growth, consistently building my skill set through both personal projects and university work.</p>
+            </div>
+
+            
+
+            <div>
                 <h3>Skills</h3>
-                <p class="text long">
+                <p class="text long short-on-mobile">
                     &bull; <strong>Programming Languages:</strong> C, C++, Python, and JavaScript applied across systems, web, and application development.<br>
                     &bull; <strong>Systems Programming:</strong> Low-level development in C including memory management, file systems, and direct hardware interaction.<br>
                     &bull; <strong>Computer Graphics:</strong> Experience using Vulkan SDK with exposure to GPU pipelines and rendering concepts.<br>
