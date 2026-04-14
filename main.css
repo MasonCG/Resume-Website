@@ -333,7 +333,12 @@ body {
         flex-direction: column;
         .profile {
             padding: 0;
+            max-width: 99%;
+            img {
+                max-width: inherit;
+            }
         }
+
 
         .content {
 
