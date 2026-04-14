@@ -53,12 +53,16 @@ body {
 
     li {
         color: black;
+        span {
+            color: inherit;
+        }
     }
 
     div {
         display: grid;
         grid-auto-flow: column;
     }
+    
 
     a {
         color: inherit;
@@ -73,6 +77,8 @@ body {
         i {
             color: inherit;
         }
+
+    
     }
 
     a:hover {
