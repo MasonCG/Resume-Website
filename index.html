@@ -8,148 +8,129 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/bfe6eb7358.js" crossorigin="anonymous"></script>
 
-    
-
+    <!-- FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
 </head>
 
 
 <body>
-<div class="filter">
-    <!-- Navigation Bar -->
-    
-    <div class="nav-bar">
-        <ul id="nav-ul">
-            <li onclick="highlightEl(this)"><a href="#AboutMe">Mason Goddard</a></li>
-            <div>
-                <li onclick="highlightEl(this)"><a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i><span class="hide-on-mobile"> GitHub</span></a></li>
-                <li onclick="highlightEl(this)"><a href="pdfs/Mason-Goddard-Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i><span class="hide-on-mobile"> Download Resume</span></a></li>
-            </div>
-        </ul>
 
-    </div>
-
-    <!-- About Me Section -->
-
-    <div id="AboutMe" class="about-me">
-        
-        <div class="profile">
+    <header>
+        <div class="hdr-top">
             <h1>Mason Goddard</h1>
-            <img src="images/me.png" alt="">
+            <p class="inter-100" class="inter-100">2026</p class="inter-100">
         </div>
-
-        <div class="content">
-            
-            <div class="inner-content">
-                <div>
-                    <h3>Contact Me</h3>
-                    <p class="text"><i class="fa fa-phone" aria-hidden="true"></i> (937) 205 - 1603</p>
-                    <p class="text"><i class="fa fa-envelope" aria-hidden="true"></i> masonGoddard2005@gmail.com</p>
-                </div>
-            
-                <div class="hide-on-mobile">
-                    <h3>Resources</h3>
-                    <a target="_blank" href="https://github.com/MasonCG?tab=repositories"><i class="fa-brands fa-github"></i>My GitHub</a>
-                    <a href="pdfs/Mason-Goddard-Resume.pdf" download="Mason Goddard Resume.pdf"><i class="fas fa-file-download"></i>Download Resume</a>
-                </div>
-            </div>
-
+        <div class="hdr-btm">
+            <p class="inter-100">Computer science & Engineering</p class="inter-100">
             <div>
-                <h3>About Me</h3>
-                <p class="text long"> I am a Software Engineering focused student at Shawnee State University with experience across a broad range of Computer Science topics. I approach problems directly and adapt quickly in new environments. I take a proactive role in project management, team collaboration and leadership while recognizing the importance of delegation and accountability. I am passionate about software and committed to continuous growth, consistently building my skill set through both personal projects and university work.</p>
+                <p class="inter-100">about</p class="inter-100">
+                <p class="inter-100">work</p class="inter-100">
+                <p class="inter-100">contact</p class="inter-100">
             </div>
+        </div>
+    </header>
 
-            
+    <div class="h-border-100"></div>
 
-            <div>
-                <h3>Skills</h3>
-                <p class="text long short-on-mobile">
-                    &bull; <strong>Programming Languages:</strong> C, C++, Python, and JavaScript applied across systems, web, and application development.<br>
-                    &bull; <strong>Systems Programming:</strong> Low-level development in C including memory management, file systems, and direct hardware interaction.<br>
-                    &bull; <strong>Computer Graphics:</strong> Experience using Vulkan SDK with exposure to GPU pipelines and rendering concepts.<br>
-                    &bull; <strong>Full-Stack Web Development:</strong> Developed dynamic web applications using Flask, HTML, CSS, and JavaScript.<br>
-                    &bull; <strong>Backend Architecture:</strong> Designed modular server-side logic, RESTful routing, and scalable application structures.<br>
-                    &bull; <strong>Database Management:</strong> Implemented relational schema design and data persistence using SQLite.<br>
-                    &bull; <strong>Authentication & Authorization:</strong> Built secure login systems with session management and role-based access control.<br>
-                    &bull; <strong>API Development:</strong> Created and integrated APIs to support dynamic data exchange and frontend updates.<br>
-                    &bull; <strong>File Handling & Security:</strong> Implemented secure file uploads, validation, and storage with attention to common vulnerabilities.<br>
-                    &bull; <strong>Frontend Integration:</strong> Utilized Jinja templating with JavaScript to create responsive and interactive user interfaces.<br>
-                    &bull; <strong>State Management:</strong> Managed user sessions and application state across requests within a web application environment.<br>
-                    &bull; <strong>Software Testing:</strong> Applied unit testing and browser automation using Unittest and Selenium.<br>
-                    &bull; <strong>Version Control:</strong> Managed codebases using Git and GitHub with structured workflows.<br>
-                    &bull; <strong>Algorithms & Complexity:</strong> Analyzed and optimized algorithms with focus on time and space efficiency.<br>
-                    &bull; <strong>Operating Systems:</strong> Developed understanding of OS concepts including file systems, processes, and system-level operations.<br>
-                    &bull; <strong>Concurrency & Networking:</strong> Implemented WebSockets, pipelines, and asynchronous/synchronous communication including UART systems.<br>
-                    &bull; <strong>Applied Computing:</strong> Studied information theory and neural networks with practical computational applications.<br>
-                    &bull; <strong>Project Management:</strong> Led planning and execution of technical and organizational projects with proactive oversight.<br>
-                    &bull; <strong>Leadership & Team Collaboration:</strong> Directed teams, facilitated collaboration, and ensured accountability across initiatives.<br>
-                    &bull; <strong>Emergency Management:</strong> Demonstrated decisive leadership during critical incidents while maintaining full policy compliance.<br>
-                    &bull; <strong>Conflict Resolution:</strong> Resolved complex interpersonal issues through structured mediation and negotiation techniques.<br>
-                    &bull; <strong>Relationship Management:</strong> Conducted ongoing check-ins and applied active listening to support community wellbeing.<br>
-                    &bull; <strong>Operational Optimization:</strong> Improved workflows, policies, and organizational structures for increased efficiency.<br>
-                    &bull; <strong>Digital Solutions Development:</strong> Engineered automated data tracking systems using AppSheet for organizational management.<br>
-                    &bull; <strong>Strategic Thinking:</strong> Applied analytical and systems-level reasoning to solve technical and organizational problems.<br>
-                    &bull; <strong>Communication:</strong> Delivered clear, structured communication to both technical and non-technical audiences.<br>
-                    &bull; <strong>Adaptability:</strong> Rapidly learned and applied new technologies across diverse technical and leadership contexts.<br>
-                </p>
-            </div>
+    <section>
+        <p class="inter-100"><span class="subtitle" >01 / Brief</span></p>
+        <p class="inter-100 s-title">Building Systems. Exploring possibilities.</p class="inter-100">
+
+        <p class="paragraph">Graphics, and systems developer focused on simulation realtime physics and researching time and space efficiency.</p>
         
-        
+        <div class="tags">
+            <p class="tag">Computer Graphics</p>
+            <p class="tag">Simulation</p>
+            <p class="tag">C / C++</p>
         </div>
 
-    </div>
+    </section>
+
+    <div class="h-border-99"></div>
+    <section>
+        <p class="inter-100"><span class="subtitle" >02 / Projects</span><span class="subtitle s-link">view all</span></p>
+        <p class="inter-100 s-title">Best Works</p class="inter-100">
+
+            <div class="projects">
+                <div class="proj">
+                    <img src="images/unit-test-fr.png" alt="unit test image"/>
+                    <div class="proj-desc">
+                        <p class="inter-100 proj-title">Python Testing Framework</p>
+                        <p class="inter-100 proj-bullet">Python / Tooling</p>
+                    </div>
 
 
+                    <div class="tags">
+                        <p class="tag" style="--clr:var(--green-clr);">Python</p>
+                    </div>
 
-
-    <!-- Projects section -->
-     
-    <div id="projs" class="projects">
-        <div class="media-cont" style="grid-area: box-1;">
-            <!-- Unit Test Clone -->
-
-            <h2>Unittest Clone</h2>
-
-            <img src="images/unit-test-fr.png" alt="Unit-TestClone" class="media">
-            <div class="content">
-                <ul>
-                    <li class="desc" onclick="viewProj(this)">Description <i class="fa fa-caret-up" aria-hidden="true"></i></li>
-                    <a href="https://github.com/MasonCG/UnitTest-Clone" onclick="highlightEl(this)" target="_blank"><li>Github Repository <i class="fa-brands fa-github"></i></li></a>
-                </ul>
-                <p>
-                    &bull; <strong>Purpose:</strong> Designed and implemented a custom Python testing framework modeled after core unittest concepts to support structured, repeatable validation of application logic. Focused on improving code reliability by enabling consistent testing of functions, classes, and edge cases within development workflows.<br><br>
-                    &bull; <strong>Core Features:</strong> Developed reusable test case classes, centralized test execution, and automated result aggregation to provide clear pass/fail feedback. Implemented extensible assertion methods to validate expected outcomes and support a wide range of test scenarios.<br><br>
-                    &bull; <strong>Architecture:</strong> Utilized object-oriented design to separate test definitions, execution logic, and result handling, allowing scalable expansion and maintainability of the framework.<br><br>
-                    &bull; <strong>Impact:</strong> Reduced debugging time and increased confidence in code quality by enforcing systematic testing practices across projects.<br><br>
-                    &bull; <strong>Technologies:</strong> Python, object-oriented programming, custom assertion design, modular test suite architecture, and integrated test result reporting.<br><br>
-                </p>
+                </div>
+    
+                <div class="proj">
+                    <img src="images/unit-test-fr.png" alt="unit test image"/>
+                    <div class="proj-desc">
+                        <p class="inter-100 proj-title">Python Testing Framework</p>
+                        <p class="inter-100 proj-bullet">Python / Tooling</p>
+                    </div>
+                </div>
+    
+                <div class="proj">
+                    <img src="images/unit-test-fr.png" alt="unit test image"/>
+                    <div class="proj-desc">
+                        <p class="inter-100 proj-title">Python Testing Framework</p>
+                        <p class="inter-100 proj-bullet">Python / Tooling</p>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div class="media-cont" style="grid-area: box-2;">
-            <!-- flowing fireworks -->
+    </section>
 
-            <h2>Flowing Fireworks</h2>
-
-            <video class="media" src="images/flowing fireworks.mp4" autoplay loop muted></video>
-            <div class="content">
-                <ul>
-                    <li class="desc" onclick="viewProj(this)">Description <i class="fa fa-caret-up" aria-hidden="true"></i></li>
-                    <a href="https://github.com/MasonCG/Flowing_Fireworks" onclick="highlightEl(this)" target="_blank"><li>Github Repository <i class="fa-brands fa-github"></i></li></a>
-                </ul>
-                <p>
-                    &bull; <strong>Purpose:</strong> Developed an interactive particle simulation and visual effects system to model dynamic phenomena such as fireworks, smoke, fire, and snowfall using real-time rendering. Designed to demonstrate applied physics concepts, animation techniques, and system-level organization within a graphical environment.<br><br>
-                    &bull; <strong>Core Features:</strong> Implemented multiple particle types with unique behaviors including gravity, velocity, fading lifecycles, and randomized motion patterns. Created complex visual effects such as firework launches with explosion patterns, trailing effects, and environmental particles like snow and smoke.<br><br>
-                    &bull; <strong>Architecture:</strong> Built a modular particle system framework using object-oriented design, enabling reusable base particle logic with extensible subclasses for specialized behaviors. Managed emission systems, lifecycle handling, and rendering pipelines for efficient real-time updates.<br><br>
-                    &bull; <strong>Impact:</strong> Demonstrated strong understanding of physics-based simulation, animation systems, and performance considerations in real-time applications, while producing a visually engaging and interactive user experience.<br><br>
-                    &bull; <strong>Technologies:</strong> Python, Pygame, object-oriented programming, trigonometry for motion calculation, real-time rendering, and event-driven input handling.<br><br>
-                </p>            
-            </div>
-
-        </div>
+    <div class="h-border-99"></div>
+    <section>
+        <p class="inter-100 subtitle">03 / Focus</p class="inter-100">
+        <p class="inter-100 s-title">Areas of Interest</p class="inter-100">
         
-    </div>
+        <div class="interests">
+            <div class="int"><span>Graphics</span><span>01</span></div>
+            <div class="int"><span>Physics Simulation</span><span>02</span></div>
+            <div class="int"><span>Systems Programming</span><span>03</span></div>
+        </div>
 
-</div>
+    </section>
+
+    <div class="h-border-99"></div>
+    <section>
+        <p class="inter-100 subtitle">04 / Background</p class="inter-100">
+        <p class="inter-100 s-title">A little about me!</p class="inter-100">
+
+        <p class="paragraph">I have spent the last 4 years at Shawnee State University (SSU) in the 
+            Digital Simulation & Gaming Engineering Technologies degree. Focusing in realtimes physics and a wide 
+            range of other computer science topics from graphics programing to developing neural networks. My favorite topics centered around creating tools 
+            like custome SDK's for a video game, testing, and a custom C web based framework like flask. I absolutely love graphics, simulation, and tool developement. 
+            I know a wide variety, but I found myself enjoying those projects the most. 
+        </p>
+        <p class="paragraph">
+            During my Sophmore and Junior years I participated in many leadership programs and roles such as a Resident Asssitant and club activies.
+            I have always been an advocate for growth in myself and others. Encouraging others to challenge their way of thinking and to avoid becoming complacent which I am all to familiar with. 
+            I take a hands on approach to leadership, constantly asking for advice from others and knowning when im not fit for the job.
+        </p>
+
+        <p class="paragraph">
+            Committing myself to future growth eventually as I learn more I want to work on projects that help develop new techniques for Graphics and Physics Simulation.  
+        </p>
+
+    </section>
+
+    <div class="h-border-99"></div>
+
+    <section>
+        <p class="inter-100 s-title">Interested in Working together?</p class="inter-100">
+
+    </section>
+
+
     <!-- Scripting --> 
     <script src="main.js" defer></script>
 </body>
